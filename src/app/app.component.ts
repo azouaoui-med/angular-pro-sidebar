@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SidebarService } from './sidebar.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-pro-sidebar';
+  constructor(public sidebarservice: SidebarService) { }
+  toggle() {
+    this.sidebarservice.setSidebarState(!this.sidebarservice.getSidebarState());
+  }
 }
