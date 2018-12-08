@@ -3,7 +3,8 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class MenusService {
+export class SidebarService {
+  toggled = true;
   menus = [
     {
       title: 'Dashboard',
@@ -93,9 +94,21 @@ export class MenusService {
       ]
     }
   ];
-
   constructor() { }
-  get menuList() {
+
+  toggle() {
+    this.toggled = ! this.toggled;
+  }
+
+  getSidebarState() {
+    return this.toggled;
+  }
+
+  setSidebarState(state: boolean) {
+    this.toggled = state;
+  }
+
+  getMenuList() {
     return this.menus;
   }
 }
