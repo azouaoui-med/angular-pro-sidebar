@@ -29,13 +29,15 @@ export class SidebarComponent implements OnInit {
   }
 
   toggle(currentMenu) {
-    this.menus.forEach(element => {
-      if (element === currentMenu) {
-        currentMenu.active = !currentMenu.active;
-      } else {
-        element.active = false;
-      }
-    });
+    if (currentMenu.type === 'dropdown') {
+      this.menus.forEach(element => {
+        if (element === currentMenu) {
+          currentMenu.active = !currentMenu.active;
+        } else {
+          element.active = false;
+        }
+      });
+    }
   }
 
   getState(currentMenu) {

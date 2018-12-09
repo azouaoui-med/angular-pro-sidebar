@@ -7,9 +7,14 @@ export class SidebarService {
   toggled = true;
   menus = [
     {
+      title: 'general',
+      type: 'header'
+    },
+    {
       title: 'Dashboard',
       icon: 'fa fa-tachometer-alt',
       active: false,
+      type: 'dropdown',
 
       submenus: [
         {
@@ -27,6 +32,7 @@ export class SidebarService {
       title: 'E-commerce',
       icon: 'fa fa-shopping-cart',
       active: false,
+      type: 'dropdown',
       submenus: [
         {
           title: 'Products',
@@ -43,6 +49,7 @@ export class SidebarService {
       title: 'Components',
       icon: 'far fa-gem',
       active: false,
+      type: 'dropdown',
       submenus: [
         {
           title: 'General',
@@ -65,6 +72,7 @@ export class SidebarService {
       title: 'Charts',
       icon: 'fa fa-chart-line',
       active: false,
+      type: 'dropdown',
       submenus: [
         {
           title: 'Pie chart',
@@ -84,6 +92,7 @@ export class SidebarService {
       title: 'Maps',
       icon: 'fa fa-globe',
       active: false,
+      type: 'dropdown',
       submenus: [
         {
           title: 'Google maps',
@@ -92,6 +101,28 @@ export class SidebarService {
           title: 'Open street map'
         }
       ]
+    },
+    {
+      title: 'Extra',
+      type: 'header'
+    },
+    {
+      title: 'Calendar',
+      icon: 'fa fa-calendar',
+      active: false,
+      type: 'simple'
+    },
+    {
+      title: 'Examples',
+      icon: 'fa fa-folder',
+      active: false,
+      type: 'simple'
+    },
+    {
+      title: 'Documentation',
+      icon: 'fa fa-book',
+      active: false,
+      type: 'simple'
     }
   ];
   constructor() { }
