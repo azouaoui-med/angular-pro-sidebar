@@ -4,7 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SidebarService {
-  toggled = true;
+  toggled = false;
+  _hasBackgroundImage = true;
   menus = [
     {
       title: 'general',
@@ -141,5 +142,13 @@ export class SidebarService {
 
   getMenuList() {
     return this.menus;
+  }
+
+  get hasBackgroundImage() {
+    return this._hasBackgroundImage;
+  }
+
+  set hasBackgroundImage(hasBackgroundImage) {
+    this._hasBackgroundImage = hasBackgroundImage;
   }
 }

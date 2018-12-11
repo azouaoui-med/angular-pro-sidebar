@@ -49,4 +49,8 @@ export class SidebarComponent implements OnInit {
     }
   }
 
+  hasBackgroundImage() {
+    return this.sidebarservice.hasBackgroundImage;
+  }
+
 }

@@ -9,7 +9,13 @@ import { SidebarService } from './sidebar/sidebar.service';
 export class AppComponent {
   title = 'angular-pro-sidebar';
   constructor(public sidebarservice: SidebarService) { }
-  toggle() {
+  toggleSidebar() {
     this.sidebarservice.setSidebarState(!this.sidebarservice.getSidebarState());
+  }
+  toggleBackgroundImage() {
+    this.sidebarservice.hasBackgroundImage = !this.sidebarservice.hasBackgroundImage;
+  }
+  getSideBarState() {
+    return this.sidebarservice.getSidebarState();
   }
 }

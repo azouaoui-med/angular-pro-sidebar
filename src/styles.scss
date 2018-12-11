@@ -11,6 +11,10 @@ body {
   font-size: .9rem;
 }
 
+.page-wrapper.toggled .sidebar {
+  left: -300px;
+}
+
 
 
 

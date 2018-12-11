@@ -1,7 +1,30 @@
 .page-wrapper {
   height: 100vh;
-  display: flex;
-  .page-content{
-    padding: 50px 20px;
+
+  .page-content {
+    display: inline-block;
+    width: 100%;
+    padding-top: 20px;
+    transition: padding-left .3s ease;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 300px;
+    }
   }
+
+  .sidebar {
+    left: 0px !important;
+  }
+
+  &.toggled {
+
+    .page-content {
+      padding-left: 0;
+    }
+  }
+
+}
+
+.page-wrapper.toggled .sidebar {
+  left: -300px;
 }
