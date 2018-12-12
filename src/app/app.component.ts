@@ -18,4 +18,8 @@ export class AppComponent {
   getSideBarState() {
     return this.sidebarservice.getSidebarState();
   }
+
+  hideSidebar() {
+    this.sidebarservice.setSidebarState(true);
+  }
 }
