@@ -32,7 +32,7 @@
   }
 
   .sidebar {
-    left: 0px !important;
+    left: 0px;
   }
 
   &.toggled {
@@ -42,8 +42,13 @@
     }
   }
 
+  .attribution{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+  }
 }
 
-.page-wrapper.toggled .sidebar {
-  left: -300px;
-}

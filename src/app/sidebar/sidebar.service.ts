@@ -16,10 +16,17 @@ export class SidebarService {
       icon: 'fa fa-tachometer-alt',
       active: false,
       type: 'dropdown',
-
+      badge: {
+        text: 'New ',
+        class: 'badge-warning'
+      },
       submenus: [
         {
           title: 'Dashboard 1',
+          badge: {
+            text: 'Pro ',
+            class: 'badge-success'
+          }
         },
         {
           title: 'Dashboard 2'
@@ -34,6 +41,10 @@ export class SidebarService {
       icon: 'fa fa-shopping-cart',
       active: false,
       type: 'dropdown',
+      badge: {
+        text: '3',
+        class: 'badge-danger'
+      },
       submenus: [
         {
           title: 'Products',
@@ -108,6 +119,16 @@ export class SidebarService {
       type: 'header'
     },
     {
+      title: 'Documentation',
+      icon: 'fa fa-book',
+      active: false,
+      type: 'simple',
+      badge: {
+        text: 'Alpha',
+        class: 'badge-primary'
+      },
+    },
+    {
       title: 'Calendar',
       icon: 'fa fa-calendar',
       active: false,
@@ -116,12 +137,6 @@ export class SidebarService {
     {
       title: 'Examples',
       icon: 'fa fa-folder',
-      active: false,
-      type: 'simple'
-    },
-    {
-      title: 'Documentation',
-      icon: 'fa fa-book',
       active: false,
       type: 'simple'
     }
