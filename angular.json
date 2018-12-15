@@ -24,12 +24,7 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              {
-                "glob": "**/*",
-                "input": "./node_modules/@fortawesome/fontawesome-free/webfonts/",
-                "output": "./assets/webfonts/"
-              }
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
@@ -89,12 +84,7 @@
             "scripts": [],
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              {
-                "glob": "**/*",
-                "input": "./node_modules/@fortawesome/fontawesome-free/webfonts/",
-                "output": "./assets/webfonts/"
-              }
+              "src/assets"
             ]
           }
         },

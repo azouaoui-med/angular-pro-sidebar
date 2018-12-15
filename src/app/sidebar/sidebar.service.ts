@@ -124,7 +124,7 @@ export class SidebarService {
       active: false,
       type: 'simple',
       badge: {
-        text: 'Alpha',
+        text: 'Beta',
         class: 'badge-primary'
       },
     },
